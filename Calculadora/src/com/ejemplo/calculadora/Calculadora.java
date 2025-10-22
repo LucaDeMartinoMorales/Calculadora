@@ -28,6 +28,8 @@ public class Calculadora {
 		case "*":
 			resultado = multiplicar(a, b);
 			System.out.println(resultado);
+		case "/":
+			resultado = dividir(a, b);
 		}
 	}
 	
@@ -41,5 +43,12 @@ public class Calculadora {
 		
 	 public static double multiplicar(double a, double b) {
 		 return a * b;
+		}
+	 
+	 public static double dividir(double a, double b) {
+		 if (b == 0) {
+		 throw new IllegalArgumentException("No se puede dividir entre cero");
+		 }
+		 return a / b;
 		}
 	}
