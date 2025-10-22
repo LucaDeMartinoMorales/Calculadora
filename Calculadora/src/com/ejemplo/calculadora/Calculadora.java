@@ -20,9 +20,14 @@ public class Calculadora {
 		switch (operacion) {
 		case "+":
 			resultado = sumar(a, b);
+			System.out.println(resultado);
 			break;
 		case "-":
 			resultado = restar(a, b);
+			System.out.println(resultado);
+		case "*":
+			resultado = multiplicar(a, b);
+			System.out.println(resultado);
 		}
 	}
 	
@@ -32,5 +37,9 @@ public class Calculadora {
 	 
 	 public static double restar(double a, double b) {
 		 return a - b;
+		}
+		
+	 public static double multiplicar(double a, double b) {
+		 return a * b;
 		}
 	}
