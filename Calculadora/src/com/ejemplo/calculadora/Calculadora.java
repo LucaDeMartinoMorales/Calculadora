@@ -21,10 +21,16 @@ public class Calculadora {
 		case "+":
 			resultado = sumar(a, b);
 			break;
+		case "-":
+			resultado = restar(a, b);
 		}
 	}
 	
 	 public static double sumar(double a, double b) {
 	 return a + b;
 	 }
+	 
+	 public static double restar(double a, double b) {
+		 return a - b;
+		}
 	}
